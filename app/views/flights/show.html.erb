@@ -8,7 +8,7 @@
 
 <h3>Passengers</h3>
 <% @flight.passengers.each do |passenger| %>
-  <%= passenger.name %>
+  <p><%= passenger.name %></p>
 <% end %>
 
 <p>Adults: <%= @flight.adult_count %></p>
