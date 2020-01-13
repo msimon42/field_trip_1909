@@ -20,5 +20,6 @@ RSpec.describe 'When i visit a flight show page' do
     expect(page).to have_content(@flight.airline.name)
     expect(page).to have_content(@passenger_1.name)
     expect(page).to have_content(@passenger_2.name)
+    expect(page).to_not have_content(@passenger_3.name)
   end
 end
